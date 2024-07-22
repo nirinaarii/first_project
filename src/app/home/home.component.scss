@@ -1,0 +1,716 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/*@use "igniteui-angular/theming" as *;*/
+/*@include core();*/
+/*@include typography();*/
+
+.calendar-wrapper {
+    max-width: 700px;
+    min-width: 200px;
+    margin: 8px;
+}
+
+.igx-calendar {
+	--ig-size: 2;
+	
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.26),
+    0 1px 1px 0 rgba(0,0,0,.12),
+    0 2px 1px -1px rgba(0,0,0,.08);
+ }
+ .igx-calendar__header{
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 0.5rem;
+  position: relative;
+  gap: 1.75rem;
+  height: 100px;
+  
+}
+
+
+
+body {
+	background: hsla(var(--ig-surface-500));
+	color: var(--ig-surface-500-contrast);
+}
+
+
+
+
+.navbar{
+    
+   --bs-navbar-padding-x: 0;
+  --bs-navbar-padding-y: 0.5rem;
+  --bs-navbar-color: rgba(0, 0, 0, 0.55);
+  --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
+  --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
+  --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
+  --bs-navbar-brand-padding-y: 0.3125rem;
+  --bs-navbar-brand-margin-end: 1rem;
+  --bs-navbar-brand-font-size: 1.25rem;
+  --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
+  --bs-navbar-brand-hover-color: rgba(0, 0, 0, 0.9);
+  --bs-navbar-nav-link-padding-x: 0.5rem;
+  --bs-navbar-toggler-padding-y: 0.25rem;
+  --bs-navbar-toggler-padding-x: 0.75rem;
+  --bs-navbar-toggler-font-size: 1.25rem;
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  --bs-navbar-toggler-border-color: rgba(0, 0, 0, 0.1);
+  --bs-navbar-toggler-border-radius: 0.375rem;
+  --bs-navbar-toggler-focus-width: 0.25rem;
+  --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  background-color: rgb(241, 247, 247);
+}
+
+ul{
+  display: flex;
+  justify-content: center;
+}
+
+ul li{
+  display: inline-block;
+  padding-left: 10px;
+  margin-right: 20px;
+  
+  transition: 0.5s;
+}
+
+ul li:hover{
+   color: #00bfff;
+   border-bottom: solid 3px #00bfff;
+   transform: scaleY(-50%,-50%);
+}
+
+.navbar .iconplace{
+  margin-left: 20px;
+  margin-bottom: 13px;
+  color: #696969;
+  
+}
+/*
+.navbar .iconplace:hover{
+  background-color: rgba(21, 101, 126, 0.1);
+  color: rgba(21, 101, 126, 0.1);
+}*/
+.link{
+  align-items: center;
+  display: flex;
+  position: relative;
+  list-style: none;
+  left: -30px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 80;
+  font-style: normal;
+}
+
+#homeicon{
+  margin-left: 9px;
+  width: 50px;
+}
+i#homeicon:hover{
+  color:#00bfff;
+  
+}
+
+.container{
+  left: 10rem;
+  padding-top: 50px;
+  margin-left: -400px;
+}
+p#title{
+  margin-top:-1rem;
+}
+
+.calendar-container{
+  height: 500px;
+  left:200px;
+  top: -10rem;
+}
+
+.calendar-wrapper {
+  max-width: 200px;
+  min-width: 200px;
+  margin: 8px;
+}
+
+.igx-calendar {
+--ig-size: 3;
+  height: 380px;
+  margin-top: -1rem;
+  margin-left: -2.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.26),
+  0 1px 1px 0 rgba(0,0,0,.12),
+  0 2px 1px -1px rgba(0,0,0,.08);
+}
+
+.stay__info {
+  display: flex;
+  justify-content: center;
+  background: hsla(var(--ig-surface-500));
+}
+
+.stay__info > span {
+  color: var(--ig-secondary-400);
+  font-weight: 600;
+  font-size: 0.875rem;
+  letter-spacing: 0.046875rem;
+  text-transform: uppercase;
+  line-height: 1rem;
+  margin: 16px;
+}
+
+.card2{
+  height: 120px;
+  width: 650px;
+  border: solid 1px #0000FF;
+  position: relative;
+  border-radius: 10px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  /*padding-left: 50px;*/
+  
+  margin-left: 2px;
+  margin-right: 10px;
+  left: 78.5rem;
+  border-color: #5eace4;
+  transition: 0.5s;
+  background-color: 0.5s;
+  background-size: 100% 200%;
+  overflow: hidden;
+  top: -32.5rem;
+  padding: 10px;
+  padding-bottom: 40px;
+  /*transform: translate(50%,50%);*/
+}
+
+/*
+.overlay{
+  position: relative;
+  background: none;
+  min-width: 200px;
+  transition: color 0.4s linear;
+}*/
+#icon{
+  border: solid 1px #5eace4 ;
+  border-radius: 200px;
+  width: 40px;
+  height: 40px;
+  background-color: #5eace4;
+  color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  padding: 30px;
+  left: 80px;
+}
+#icon2{
+  border: solid 1px #5eace4 ;
+  border-radius: 200px;
+  width: 40px;
+  height: 40px;
+  background-color: #5eace4;
+  color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  padding: 30px;
+  left: 30px;
+}
+.card2:hover #icon{
+  
+  color: #5eace4;
+  background-color: #fff;
+}
+.card2:hover p{
+  color: #fff;
+}
+
+
+.card2::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #5eace4;
+  z-index: -1;
+  transition: transform 0.9s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+p{
+  color: #5eace4;
+}
+.card2::before{
+  transform: scaleY(0);
+}
+.card2:hover::before{
+  transform: scaleY(1);
+}
+.card2 .icon::before{
+  background-color: #fff;
+}
+.card2 .icon:hover::before{
+  background-color: #fff;
+}
+
+
+/*
+.card2:hover .overlay{
+  height: 100%;
+}*/
+label{
+  color: #00bfff;
+}
+label:hover{
+  color: #fff
+}
+
+
+h6 .card2:hover{
+  color: #fff;
+}
+
+
+.card1{
+  border: solid 1px #5eace4;
+  width: 439px;
+  height: 398px;
+  position: relative;
+  border-radius: 10px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding-left: 50px;
+  left: -50px;
+  /*margin-left: 20px;*/
+  margin-right: 10px;
+  left: 50rem;
+  border-color: #5eace4;
+  padding-top: 20px;
+}
+.card3{
+  height: 120px;
+  width: 440px;
+  border: solid 1px #00bfff;
+  position: relative;
+  border-radius: 10px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  /*padding-left: 50px;*/
+  overflow: hidden;
+ /* margin-left: 5px;*/
+  margin-right: -9px;
+  left: 50rem;
+  top: 1rem;
+  border-color: #00bfff;
+}
+.card3:hover #icon{
+  
+  color: #5eace4;
+  background-color: #fff;
+}
+.card3:hover p{
+  color: #fff;
+}
+
+
+.card3::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #5eace4;
+  z-index: -1;
+  transition: transform 0.9s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+p{
+  color: #5eace4;
+}
+.card3::before{
+  transform: scaleY(0);
+}
+.card3:hover::before{
+  transform: scaleY(1);
+}
+.card3 .icon::before{
+  background-color: #fff;
+}
+.card3 .icon:hover::before{
+  background-color: #fff;
+}
+
+ .card4{
+  border: solid 1px #00bfff;
+  width: 315px;
+  height: 120px;
+  position: relative;
+  border-radius: 10px;
+  display: grid;
+  
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  
+  /*margin-left: 20px;*/
+  margin-right: 5px;
+  top: -31.3rem;
+  left: 78.8rem;
+  border-color: #00bfff;
+}
+.card4:hover #icon{
+  
+  color: #5eace4;
+  background-color: #fff;
+}
+.card4:hover p{
+  color: #fff;
+}
+
+
+.card4::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #5eace4;
+  z-index: -1;
+  transition: transform 0.9s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+p{
+  color: #5eace4;
+}
+.card4::before{
+  transform: scaleY(0);
+}
+.card4:hover::before{
+  transform: scaleY(1);
+}
+.card4 .icon::before{
+  background-color: #fff;
+}
+.card4 .icon:hover::before{
+  background-color: #fff;
+}
+.card44{
+  border: solid 1px #00bfff;
+  width: 319px;
+  height: 120px;
+  position: relative;
+  border-radius: 10px;
+  display: grid;
+  
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  
+  /*margin-left: 20px;*/
+  margin-right: 5px;
+  top: -38.8rem;
+  left: 99.5rem;
+  border-color: #00bfff;
+}
+.card44:hover #icon2{
+  
+  color: #5eace4;
+  background-color: #fff;
+}
+.card44:hover p{
+  color: #fff;
+}
+
+
+.card44::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #5eace4;
+  z-index: -1;
+  transition: transform 0.9s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+p{
+  color: #5eace4;
+}
+.card44::before{
+  transform: scaleY(0);
+}
+.card44:hover::before{
+  transform: scaleY(1);
+}
+.card44 .icon2::before{
+  background-color: #fff;
+}
+.card44 .icon2:hover::before{
+  background-color: #fff;
+}
+
+
+.card5{
+  height: 120px;
+  width: 650px;
+  border: solid 1px #00bfff;
+  position: relative;
+  border-radius: 10px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+ 
+  overflow: hidden;
+  margin-left: 5px;
+ /* margin-right: 9px;*/
+  left: 78.7rem;
+  top: -37.5rem;
+  border-color: #00bfff;
+  
+}
+.card5:hover #icon5{
+  
+  color: #5eace4;
+  background-color: #fff;
+}
+.card5:hover p{
+  color: #fff;
+}
+
+
+.card5::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #5eace4;
+  z-index: -1;
+  transition: transform 0.9s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+p{
+  color: #5eace4;
+}
+.card5::before{
+  transform: scaleY(0);
+}
+.card5:hover::before{
+  transform: scaleY(1);
+}
+.card5 .icon5::before{
+  background-color: #fff;
+}
+.card5 .icon5:hover::before{
+  background-color: #fff;
+}
+#icon5{
+  border: solid 1px #5eace4 ;
+  border-radius: 200px;
+  width: 40px;
+  height: 40px;
+  background-color: #5eace4;
+  color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  padding: 30px;
+  left: 40px;
+}
+
+ 
+
+
+.card6{
+  border: solid 1px #00bfff;
+  width: 318px;
+  
+  height: 118px;
+  position: relative;
+  border-radius: 10px;
+  display: grid;
+  
+  align-items: center;
+  justify-content: center;
+  
+  
+  overflow: hidden;
+  margin-right: 5px;
+  top: -36.4rem;
+  left: 79rem;
+  border-color: #00bfff;
+}
+.card6:hover #icon6{
+  
+  color: #5eace4;
+  background-color: #fff;
+}
+.card6:hover p{
+  color: #fff;
+}
+
+
+.card6::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #5eace4;
+  z-index: -1;
+  transition: transform 0.9s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+p{
+  color: #5eace4;
+}
+.card6::before{
+  transform: scaleY(0);
+}
+.card6:hover::before{
+  transform: scaleY(1);
+}
+.card6 .icon6::before{
+  background-color: #fff;
+}
+.card6 .icon6:hover::before{
+  background-color: #fff;
+}
+#icon6{
+  border: solid 1px #5eace4 ;
+  border-radius: 200px;
+  width: 40px;
+  height: 40px;
+  background-color: #5eace4;
+  color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  padding: 30px;
+  left: 30px;
+}
+.card7{
+  border: solid 1px #00bfff;
+  width: 313px;
+  
+  height: 118px;
+  position: relative;
+  border-radius: 10px;
+  display: grid;
+  
+  align-items: center;
+  justify-content: center;
+  
+  overflow: hidden;
+  
+  margin-right: 5px;
+  top: -43.8rem;
+  left: 100rem;
+  border-color: #00bfff;
+}
+.card7:hover #icon7{
+  
+  color: #5eace4;
+  background-color: #fff;
+}
+.card7:hover p{
+  color: #fff;
+}
+
+
+.card7::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #5eace4;
+  z-index: -1;
+  transition: transform 0.9s;
+  transform-origin: 0 0;
+  transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+p{
+  color: #5eace4;
+}
+.card7::before{
+  transform: scaleY(0);
+}
+.card7:hover::before{
+  transform: scaleY(1);
+}
+.card7 .icon7::before{
+  background-color: #fff;
+}
+.card7 .icon7:hover::before{
+  background-color: #fff;
+}
+#icon7{
+  border: solid 1px #5eace4 ;
+  border-radius: 200px;
+  width: 40px;
+  height: 40px;
+  background-color: #5eace4;
+  color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  padding: 30px;
+  left: 70px;
+}
+
+h6{
+  color: #5eace4;
+}
+h6:hover{
+  color: #fff;
+}
+/*
+#icon{
+  color: #fff;
+  border: solid 1px #00bfff;
+  border-radius: 90px;
+  background-color: #5eace4;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+#icon:hover{
+  color: #00bfff;
+  background-color: #fff;
+}*/

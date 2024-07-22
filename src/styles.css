@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+@import '../node_modules/@syncfusion/ej2-base/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-buttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-inputs/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-lists/styles/material.css'; 
+@import'../node_modules/@syncfusion/ej2-splitbuttons/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-calendars/styles/material.css';
+@import '../node_modules/@syncfusion/ej2-angular-calendars/styles/material.css';
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.calendar-wrapper {
+    max-width: 400px;
+    min-width: 200px;
+    margin: 8px;
+}
+
+.igx-calendar {
+	--ig-size: 2;
+	
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.26),
+    0 1px 1px 0 rgba(0,0,0,.12),
+    0 2px 1px -1px rgba(0,0,0,.08);
+ }

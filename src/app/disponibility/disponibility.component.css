@@ -1,0 +1,32 @@
+
+
+h5{
+    color: #345676;
+    font-size: 26px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    
+}
+ h5::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #0199DA;
+    bottom: 0;
+    left: 0;
+}
+#bt_help{
+    position: relative;
+    left:-6rem;
+    top: -10rem;
+    width: 100px;
+    height: 40px;
+}
+.no_tranche_heure{
+    position: relative;
+    top: -30rem;
+    left: 2rem;
+}

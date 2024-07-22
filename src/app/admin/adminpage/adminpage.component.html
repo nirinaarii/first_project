@@ -1,0 +1,230 @@
+<div class="content mt-2">
+    <div class="page-inner mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">
+                            <h2><i class="fa-solid fa-users"></i>&nbsp; &nbsp; GESTION DES CLIENTS</h2>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="d-flex justify-content-between">
+                                    <div class="mb-3 filter_recherche">
+                                        <div class="btn-group dropdown show">
+                                            <a class="btn btn-primary btn-border btn-sm dropdown-toggle"
+                                                href="#" role="button" id="dropdownMenuLink"
+                                                data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                Listes de clients
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <a class="dropdown-item filtrer_client" id="" href="#">Tous
+                                                    clients</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item filtrer_client" href="#"
+                                                    id="ENZO Enzo">ENZO Enzo</a>
+                                                <a class="dropdown-item filtrer_client" href="#"
+                                                    id="MIKA Mika">MIKA Mika</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <a href="#" class="btn btn-primary btn-border btn-sm"
+                                            title="Ajout un client"><i class="fas fa-plus"></i></a>
+                                        <a href="#" title="Modele excel"
+                                            class="btn btn-primary btn-border btn-sm"
+                                            title="Exporter en excel"><i class="far fa-file-excel"></i></a>
+                                        <a href="#" class="btn btn-primary btn-border btn-sm show_import"
+                                            title="Importer en excel"><i class="fa-solid fa-upload"></i></a>
+                                        <a href="#" class="btn btn-primary btn-border btn-sm"
+                                            title="Afficher tout"><i class="far fa-list-alt"></i></a>
+                                    </div>
+                                </div>
+                                <div class="table-responsive">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-6">
+                                            <div class="dataTables">
+                                                <label>
+                                                    <select name="basic-datables_length" class="form-control" style="left: 5rem;">
+                                                        <option value="10">10</option>
+                                                        <option value="25">25</option>
+                                                        <option value="50">50</option>
+                                                        <option value="Tout">Tout</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6">
+                                            <div id="basic-datatables_filter" class="datatables_filter">
+                                                <label>
+
+                                                    Rechercher:<input type="search"
+                                                        class="form-control form-control-sm" placeholder
+                                                        aria-controls="basic-databases">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <table class="table table-striped" id="basic-datatables">
+                                        <thead class="bg-primary text-white">
+
+                                            <tr>
+                                                <th class="text-center" style="width:15%;">Clients</th>
+                                                <th class="text-center" style="width:10%;">Email</th>
+                                                <th class="text-center" style="width:10%;">Telephone</th>
+                                                <th class="text-center" style="width:10%;">N° contrat</th>
+                                                <th class="text-center" style="width:22%;">Durée du contrat
+                                                </th>
+                                                <th class="text-center" style="width:15%;">Dernier
+                                                    rendez-vous</th>
+                                                <th class="text-center" style="width:8%;">En compte</th>
+                                                <th class="text-center" style="width:10%;"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="table_sort">
+                                            <tr>
+                                                <td>ENZO Enzo
+                                                </td>
+                                                <td class="text-center">enzoanjaratiana.com</td>
+                                                <td class="text-center">hdshdfsh</td>
+                                                <td class="text-center">
+                                                </td>
+                                                <td class="text-center">
+                                                    <span class="text-center">-</span>
+                                                </td>
+                                                <td class="text-center">
+                                                    <span class="text-center">-</span>
+                                                </td>
+                                                <td class="text-center">
+                                                    Non
+                                                </td>
+
+                                                <td>
+                                                    <a class="text-primary" href="">
+                                                        <i class="fa-solid fa-pencil" title="Modifier" style="z-index: 1001;"></i>
+                                                    </a>
+                                                    <span href="#"
+                                                        class="delete_client text-danger ml-1 pointer"
+                                                        data-type="4" data-id="170">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </span>
+                                                    <a href="#" class="ml-1 listeFacture" id="170-ENZO Enzo"
+                                                        title="Factures" data-toggle="modal">
+                                                        <i class="fa-solid fa-file"></i>
+                                                    </a>
+                                                    <a href="#"
+                                                        class="ml-1 text-success listeIntervention text-success"
+                                                        id="170-ENZO Enzo" title="Listes des rendez-vous"
+                                                        data-toggle="modal">
+                                                        <i class="fa-solid fa-list"></i>
+                                                    </a>
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>MIKA Mika
+                                                </td>
+                                                <td class="text-center">raveroson73.com</td>
+                                                <td class="text-center">0324124259</td>
+                                                <td class="text-center">
+                                                </td>
+                                                <td class="text-center">
+                                                    <span class="text-center">-</span>
+                                                </td>
+                                                <td class="text-center">
+                                                    <span class="text-center">-</span>
+                                                </td>
+                                                <td class="text-center">
+                                                    Non
+                                                </td>
+
+                                                <td>
+                                                    <a class="text-primary" href="#">
+                                                        <i class="fas fa-pencil-alt" title="Modifier"></i>
+                                                    </a>
+                                                    <span href="#"
+                                                        class="delete_client text-danger ml-1 pointer"
+                                                        data-type="4" data-id="189">
+                                                        <i class="fas fa-trash"></i>
+                                                    </span>
+                                                    <a href="#" class="ml-1 listeFacture" id="189-MIKA Mika"
+                                                        title="Factures" data-toggle="modal">
+                                                        <i class="fas fa-file-alt"></i>
+                                                    </a>
+                                                    <a href="#"
+                                                        class="ml-1 text-success listeIntervention text-success"
+                                                        id="189-MIKA Mika" title="Listes des rendez-vous"
+                                                        data-toggle="modal">
+                                                        <i class="fas fa-list"></i>
+                                                    </a>
+                                                </td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade bd-example-modal-lg" id="listeIntervention" tabindex="-1" role="dialog"
+                aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modal_titre">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body" id="liste_intervention">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="import_excel" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header bg-primary text-white">
+                            <h5 class="modal-title font-weight-bold">IMPORTATION</h5>
+                            <button type="button" class="close text-white font-weight-bold"
+                                data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <form action="" class="p-4" method="post" class="" enctype="multipart/form-data">
+                            <input type="hidden" name="_token"
+                                value="mNUiIcyHWULWnyiDqjYQKM0Y3n92akR8nFvXHMln">
+                            <div class="form-group mb-3">
+                                <label for="fileExcel">Sélectionnez le fichier Excel :</label>
+                                <input type="file" class="form-control" id="fileExcel" name="fileExcel"
+                                    accept=".xlsx, .xls">
+                            </div>
+
+                            <div class="modal-footer">
+                                <div class=" btn_client">
+                                    <button type="submit"
+                                        class="btn btn-primary btn-sm btn_import_client">Importer</button>
+                                    <button type="reset" class="btn btn-danger btn-sm" data-dismiss="modal"
+                                        aria-label="Close">Annuler</button>
+                                </div>
+                                <div class="spinner_client d-none">
+                                    <div class="loader"></div>
+                                </div>
+
+                            </div>
+                           
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

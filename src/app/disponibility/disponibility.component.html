@@ -1,0 +1,96 @@
+
+<main id="main">
+    <section id="about" class="about">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="section_title">
+                    <h5>Etat de disponibilité</h5>
+                    <div class="calendar-container">
+
+                        <igx-calendar>
+
+                        </igx-calendar>
+
+                    </div>
+                    <style>
+                        .calendar-container {
+                            margin: 1%;
+                        }
+                    </style>
+                </div>
+                <button class="btn  btn-secondary  btn-sm d-flex  justify-content-center align-items-center"
+                    type="button" data-bs-toggle="offcanvas" id="bt_help" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight">
+                    &nbsp;<i class="fa-solid fa-question"></i>&nbsp;Aide&nbsp;
+                </button>
+            </div>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel">Les codes couleurs utilisés</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div>
+                        <h5 id="offcanvasRightLabel">Calendrier</h5>
+                        <ul>
+                            <li class="d-flex">
+                                <div class="w-10"><i class='bx bxs-circle text-danger'></i></div>
+                                <div class="w-90"><span>Aucun technicien disponible</span></div>
+                            </li>
+                            <li class="d-flex">
+                                <div class="w-10"><i class='bx bxs-circle text-warning'></i></div>
+                                <div class="w-90"><span>Un seul technicien disponible</span></div>
+                            </li>
+                            <li class="d-flex">
+                                <div class="w-10"><i class='bx bxs-circle text-success'></i></div>
+                                <div class="w-90"><span>Tous les techniciens sont disponible</span></div>
+                            </li>
+                            <li class="d-flex">
+                                <div class="w-10"><i class='bx bxs-circle text-gray'></i></div>
+                                <div class="w-90"><span>Date passée, Jour férié ou aucun technicien disponible</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <h5 id="offcanvasRightLabel">Disponibilité</h5>
+                        <ul>
+                            <li class="d-flex">
+                                <div class="w-10"><i class='bx bxs-circle text-danger'></i></div>
+                                <div class="w-90"><span>100% occupée</span></div>
+                            </li>
+                            <li class="d-flex">
+                                <div class="w-10"><i class='bx bxs-circle text-warning'></i></div>
+                                <div class="w-90"><span>75% occupée</span></div>
+                            </li>
+                            <li class="d-flex">
+                                <div class="w-10"><i class='bx bxs-circle text-success'></i></div>
+                                <div class="w-90"><span>50% occupée</span></div>
+                            </li>
+                            <li class="d-flex">
+                                <div class="w-10"><i class='bx bx-circle'></i></div>
+                                <div class="w-90"><span>0%-25% occupée</span></div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-xl-4 d-flex align-items-stretch justify-content-center justify-content-lg-start">
+                    <div id="calendrier"></div>
+                </div>
+                <div class="col-xl-7 align-items-stretch d-flex justify-content-between" id="etat_dispo">
+                    <div class="col-md-9 tranche_heure border-1">
+                        <div class="no_tranche_heure">
+                            <img src="https://client.jl-dev.fr/assets/clients/img/no_events.svg" alt="" srcset="">
+                            <p>Vous ne pouvez pas plannifier l'intervention car il n'a pas de technicien disponible
+                                aujourd'hui</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+</main>

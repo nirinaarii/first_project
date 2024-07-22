@@ -1,0 +1,30 @@
+.calendar-wrapper {
+    max-width: 400px;
+    min-width: 200px;
+    margin: 8px;
+}
+
+.igx-calendar {
+	--ig-size: 2;
+	
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.26),
+    0 1px 1px 0 rgba(0,0,0,.12),
+    0 2px 1px -1px rgba(0,0,0,.08);
+ }
+
+ @use "igniteui-angular/theming" as *;
+
+@include core();
+@include typography();
+
+$custom-palette: palette(
+	$primary: #09f,
+	$secondary: #e41c77,
+	$surface: #fff,
+	$grays: #000);
+@include theme($palette: $custom-palette, $schema: $light-schema);
+
+body {
+	background: hsla(var(--ig-surface-500));
+	color: var(--ig-surface-500-contrast);
+}

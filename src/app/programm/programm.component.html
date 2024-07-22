@@ -1,0 +1,126 @@
+<div class="container">
+    <div class="main">
+        <div class="section_title">
+            <h5>Programmez vos rendez-vous
+
+            </h5>
+        </div>
+        <button class="btn  btn-secondary  btn-sm d-flex  justify-content-center align-items-center" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" id="bt_help" aria-controls="offcanvasRight">
+            &nbsp;<i class="fa-solid fa-question"></i>&nbsp;Aide&nbsp;
+        </button>
+
+
+        <input type="hidden" id="id_devis" value=" NULL ">
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel">Les codes couleurs utilisés</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <h5 id="offcanvasRightLabel">Calendrier</h5>
+                    <ul>
+                        <li class="d-flex">
+                            <div class="w-10"><i class='bx bxs-circle text-danger'></i></div>
+                            <div class="w-90"><span>Aucun technicien disponible</span></div>
+                        </li>
+                        <li class="d-flex">
+                            <div class="w-10"><i class='bx bxs-circle text-warning'></i></div>
+                            <div class="w-90"><span>Un seul technicien disponible</span></div>
+                        </li>
+                        <li class="d-flex">
+                            <div class="w-10"><i class='bx bxs-circle text-success'></i></div>
+                            <div class="w-90"><span>Tous les techniciens sont disponible</span></div>
+                        </li>
+                        <li class="d-flex">
+                            <div class="w-10"><i class='bx bxs-circle text-gray'></i></div>
+                            <div class="w-90"><span>Date passée, Jour férié ou aucun technicien disponible</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <h5 id="offcanvasRightLabel">Disponibilité</h5>
+                    <ul>
+                        <li class="d-flex">
+                            <div class="w-10"><i class='bx bxs-circle text-danger'></i></div>
+                            <div class="w-90"><span>100% occupée</span></div>
+                        </li>
+                        <li class="d-flex">
+                            <div class="w-10"><i class='bx bxs-circle text-warning'></i></div>
+                            <div class="w-90"><span>75% occupée</span></div>
+                        </li>
+                        <li class="d-flex">
+                            <div class="w-10"><i class='bx bxs-circle text-success'></i></div>
+                            <div class="w-90"><span>50% occupée</span></div>
+                        </li>
+                        <li class="d-flex">
+                            <div class="w-10"><i class='bx bx-circle'></i></div>
+                            <div class="w-90"><span>0%-25% occupée</span></div>
+                        </li>
+                    </ul>
+                    <h5 id="offcanvasRightLabel">Tranche minute</h5>
+                    <ul>
+                        <li>
+                            <div class="w-10"><i class='bx bxs-circle text-primary'></i></div>
+                            <div class="w-90">possibilité de rendez-vous</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="programm">
+
+            <div class="row no-gutters align-items-center mt-4">
+                <div class="search">
+                    <input type="search" class="form-control w-65" id="input_search"
+                        placeholder="Recherchez rendez-vous,prix,duree...">
+                    <i class="fa-solid fa-magnifying-glass" id="bt_search"></i>
+                </div>
+            </div>
+            <div class="bt_date">
+                <div class="col-xl-6 d-flex justify-content-center offset-md-7 mt-2 mb-7">
+                    <button type="button" class="btn btn-light w-30" style="width: 140px;" disabled>
+                        <i class="fa-solid fa-cart-shopping" id="icon_chart"></i>
+
+                        <span>|</span> &nbsp;<span id="prix_total">0 </span>&nbsp;<span>€</span>
+
+                    </button>
+                    <button class="btn btn-primary btn-sm d-flex  justify-content-center align-items-center"
+                        id="choisir-date" style="background-color: #0199DA; border-color: #0199DA;">&nbsp;&nbsp;<i class="fa-solid fa-calendar-days"></i>&nbsp; Choisir une
+                        date&nbsp;</button>
+                    <button
+                        class="btn btn-outline-secondary btn-sm mx-1 d-flex  justify-content-center align-items-center"
+                        id="annuler-intervention">&nbsp;<i class="fa-solid fa-x"></i>&nbsp;Annuler</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row no-gutters p-3 my-4" id="card-prestation" >
+                    <div class="card col-md-2 offset-md-4 m-2 py-1 card-prestation">
+                        <div class="d-flex justify-content-between py-2 px-0">
+                            <div class="text-start col-auto me-auto">
+                                <span>Rendez-vous commerciale</span>
+                            </div>
+                            <div class="text-end col-auto">
+                                <input type="checkbox" class="check_prestation form-check-input"
+                                    style="margin-left: 10px;" id="11" value="11" checked disabled>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between py-2 px-0 w-100">
+                            <div class="text-start col-auto me-auto">
+                                <span>0 €</span>
+                            </div>
+                            <div class="text-end col-auto">
+                                <span>60 min</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -25,13 +25,25 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "node_modules/minireset.css/minireset.css",
+              "src/styles.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/igniteui-angular/styles/igniteui-angular.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/hammerjs/hammer.min.js"
+            ],
             "server": "src/main.server.ts",
             "prerender": true,
             "ssr": {
               "entry": "server.ts"
+            },
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "node_modules"
+              ]
             }
           },
           "configurations": {
@@ -89,12 +101,25 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.css",
+              "node_modules/igniteui-angular/styles/igniteui-angular.css",
+              "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/hammerjs/hammer.min.js"
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "node_modules"
+              ]
+            }
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "485f5dac-8afa-46dd-b159-71a09f11a2e6"
   }
 }
