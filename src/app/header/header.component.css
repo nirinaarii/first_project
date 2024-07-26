@@ -121,7 +121,7 @@ p#title{
 }
 
 .calendar-container{
-  height: 500px;
+  height: 590px;
   left:200px;
   top: -10rem;
 }
@@ -155,7 +155,7 @@ p#title{
   position: relative;
   gap: 0.75rem;
   height: 0px!important;
-  
+  background-color: #0199DA !important;
 }
 
 .p-datepicker table td {
@@ -941,6 +941,8 @@ h6:hover{
 
 .text-center {
   text-align: center !important;
+  position: relative;
+  left: 7rem;
 }
 .fw-bold {
   font-weight: 700 !important;

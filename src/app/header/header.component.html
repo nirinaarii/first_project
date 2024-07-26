@@ -105,7 +105,13 @@
 
                                 </div>
                                 <div class="calendar_box">
-                                    <igx-calendar></igx-calendar>
+                                    <div class="calendar-section">
+                                        <article class="calendar-wrapper">
+                                            <!--onSelection($event)-->
+                                          <igx-calendar  #calendar selection="single" (selected)="($event)" [showWeekNumbers]="true"  style="height: 460px;top: -20px;margin-bottom: 40px;position: relative;"></igx-calendar>
+                                        </article>
+                                      </div>
+                                    <!-- <igx-calendar></igx-calendar> -->
                                 </div>
                             </a>
                         </div>
@@ -132,7 +138,7 @@
 
                             <div class="row mb-3 ">
                                 <div class="col-md-6 pe-0 mobile-menu-item " id="0">
-                                    <a class="pave" href="/client/historique">
+                                    <a class="pave" href="#">
                                         <div class="icon-box ">
                                             <div class="icon"><!--<i class='bx bx-history' href="/client/historique"></i>
                                             
@@ -146,7 +152,7 @@
                                     </a>
                                 </div>
                                 <div class="col-md-6 ">
-                                    <a class="pave" href="/client/facture">
+                                    <a class="pave" href="#">
                                         <div class="icon-box mobile-menu-item-label">
                                             <div class="icon"><!--<i class='bx bxs-file' href="/client/facture"></i></div>
                                             <h4 class="title"><a href="/client/facture">DEVIS / FACTURES</a></h4> -->
@@ -182,7 +188,7 @@
 
                             <div class="row mb-3">
                                 <div class="col-md-6 pe-0 mobile-menu-item ">
-                                    <a class="pave" href="https://testclients.jl-dev.fr/client/information/0">
+                                    <a class="pave" href="#">
                                         <div class="icon-box mobile-menu-item-label">
                                             <!-- <div class="icon"><i class='bx bxs-id-card'
                                                     href="https://testclients.jl-dev.fr/client/information/0"></i></div>
@@ -198,7 +204,7 @@
                                     </a>
                                 </div>
                                 <div class="col-md-6">
-                                    <a class="pave" href="/client/gestion-compte">
+                                    <a class="pave" href="#">
                                         <div class="icon-box">
                                             <!-- <div class="icon"><i class="fa fa-cog" aria-hidden="true"
                                                     href="/client/gestion-compte"></i></div>

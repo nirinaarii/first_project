@@ -30,3 +30,25 @@ h5{
     top: -30rem;
     left: 2rem;
 }
+.calendar-container{
+    height: 590px;
+    left:200px;
+    top: -10rem;
+  }
+  
+  .calendar-wrapper {
+    max-width: 200px;
+    min-width: 200px;
+    margin: 8px;
+  }
+  
+  .igx-calendar {
+  --ig-size: 3;
+    height: 380px;
+   
+    margin-top: -1rem;
+    margin-left: -2.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.26),
+    0 1px 1px 0 rgba(0,0,0,.12),
+    0 2px 1px -1px rgba(0,0,0,.08);
+  }

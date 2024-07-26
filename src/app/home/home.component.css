@@ -59,7 +59,7 @@ ul li{
   padding-left: 10px;
   margin-right: 20px;
   list-style: none;
-  transition: 0.5s;
+  transition: 0.5s ease;
 }
 
 a li{
@@ -67,10 +67,12 @@ a li{
   text-decoration: none;
   font-family: "Imprima", sans-serif;
 }
-ul li:hover{
-   color: #00bfff;
-   border-bottom: solid 3px #00bfff;
-   transform: scaleY(-50%,-50%);
+ul a li:hover{
+   color: #0199DA;
+   border-bottom: solid 3px #0199DA;
+   /* transition: scaleY(-50%,-50%); */
+   position: relative;
+   
 }
 
 .navbar .iconplace{
@@ -114,35 +116,24 @@ p#title{
   margin-top:-1rem;
 }
 
-.calendar-container{
-  height: 500px;
-  left:200px;
-  top: -10rem;
-}
 
-.calendar-wrapper {
+
+/* .calendar-wrapper {
   max-width: 200px;
   min-width: 200px;
   margin: 8px;
-}
+} */
 
-.igx-calendar {
---ig-size: 3;
-  height: 380px;
- 
-  margin-top: -1rem;
-  margin-left: -2.5rem;
-  box-shadow: 0 1px 3px 0 rgba(0,0,0,.26),
-  0 1px 1px 0 rgba(0,0,0,.12),
-  0 2px 1px -1px rgba(0,0,0,.08);
-}
+
+
+
 
 
 
 /* styles.css | http://localhost:4200/styles.css */
 
 
-.igx-calendar__header{
+/* .igx-calendar__header{
   display: flex;
   flex-direction: column;
   padding: 0rem 0.5rem;
@@ -150,8 +141,14 @@ p#title{
   gap: 0.75rem;
   height: 0px!important;
   
-}
+} */
 
+/* .igx-calendar__body {
+  display: grid;
+  grid-template-columns: repeat(var(--calendar-months), 1fr);
+  column-gap: 2.75rem;
+  height: 2px;
+} */
 .p-datepicker table td {
   padding: 0.13rem; /* Ajustez selon vos besoins */
 }
@@ -301,14 +298,14 @@ p#title{
   top: 0;
   width: 100%;
   height: 100%;
-  background: #5eace4;
+  background: #10a4e4;
   z-index: -1;
   transition: transform 0.9s;
   transform-origin: 0 0;
   transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
 }
 p{
-  color: #5eace4;
+  color: #10a4e4;
   font-size: 15px;
   font-weight: bold;
   font-family: 'Roboto', Times, serif;
@@ -326,13 +323,23 @@ p{
   background-color: #fff;
 }
 
-
+.icon[_ngcontent-ng-c1244384016] {
+  margin: 15px auto 10px auto;
+  padding-top: 12px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: #0199DA;
+  transition: transform 0.3s ease;
+}
 /*
 .card2:hover .overlay{
   height: 100%;
 }*/
 label{
-  color: #00bfff;
+  color: #10a4e4;
 }
 label:hover{
   color: #fff

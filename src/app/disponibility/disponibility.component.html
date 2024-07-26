@@ -7,9 +7,12 @@
                     <h5>Etat de disponibilité</h5>
                     <div class="calendar-container">
 
-                        <igx-calendar>
-
-                        </igx-calendar>
+                        <div class="calendar-section">
+                            <article class="calendar-wrapper">
+                                <!--onSelection($event)-->
+                              <igx-calendar  #calendar selection="single" (selected)="($event)" [showWeekNumbers]="true"  style="height: 460px;top: 20px;margin-bottom: 40px;position: relative;"></igx-calendar>
+                            </article>
+                          </div>
 
                     </div>
                     <style>
@@ -83,7 +86,7 @@
                 <div class="col-xl-7 align-items-stretch d-flex justify-content-between" id="etat_dispo">
                     <div class="col-md-9 tranche_heure border-1">
                         <div class="no_tranche_heure">
-                            <img src="https://client.jl-dev.fr/assets/clients/img/no_events.svg" alt="" srcset="">
+                            <img src="no_events.svg" alt="" srcset="">
                             <p>Vous ne pouvez pas plannifier l'intervention car il n'a pas de technicien disponible
                                 aujourd'hui</p>
                         </div>

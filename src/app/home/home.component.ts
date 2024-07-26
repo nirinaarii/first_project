@@ -37,4 +37,9 @@ export class HomeComponent {
     const externalUrl = 'https://example.com';
     window.open(externalUrl, '_blank'); // Ouvre dans un nouvel onglet
   }
+
+  onConnectButtonClick():void{
+    // this.router.navigate(['/Connexion']);
+    console.log('le bouton a été cliqué');
+  }
 }
