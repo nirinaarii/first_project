@@ -104,6 +104,9 @@ i#homeicon:hover{
   
 }
 
+.highlight{
+  background-color: #0199DA;
+}
 .calendar_box{
   top: 5rem;
   position: relative;
@@ -111,6 +114,9 @@ i#homeicon:hover{
   height: 100%;
 }
 
+.gray-background{
+  background-color: transparent;
+}
 .container{
   left: 10rem;
   padding-top: 50px;

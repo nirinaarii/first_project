@@ -108,7 +108,8 @@
                                     <div class="calendar-section">
                                         <article class="calendar-wrapper">
                                             <!--onSelection($event)-->
-                                          <igx-calendar  #calendar selection="single" (selected)="($event)" [showWeekNumbers]="true"  style="height: 460px;top: -20px;margin-bottom: 40px;position: relative;"></igx-calendar>
+                                          <igx-calendar  #calendar selection="multi" (specialDates)="getSpecialDates()" specialDateStyle="getSpecialDateStyle" class="gray-background"  [showWeekNumbers]="true"  style="height: 460px;top: -20px;margin-bottom: 40px;position: relative;"></igx-calendar>
+                                          <!-- (selected)="onSelection($event)" (viewDateChanged)="viewDateChanged($event)" (activeViewChanged)="activeViewChanged($event)" -->
                                         </article>
                                       </div>
                                     <!-- <igx-calendar></igx-calendar> -->

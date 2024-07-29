@@ -12,6 +12,23 @@ body{
   /* overflow-y: hidden; */
   /* overflow-x: hidden; */
 }
+.navbar {
+  
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+}
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.h-100 {
+    height: 100% !important;
+}
 .navbar{
     
    --bs-navbar-padding-x: 0;
